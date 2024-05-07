@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <button class="rock" onclick="helper(this);"><img src="rock.png" width="80" height="80"></button>
+    <button class="paper" onclick="helper(this);"><img src="paper.png" width="80" height="80"></button>
+    <button class="scissor" onclick="helper(this);"><img src="scissor.png" width="80" height="80"></button>
+    <h1 class="you">You Win</h1>
+    <h1 class="comp">Computer win</h1>
+    <h1 class="draw">Draw</h1>
+    <div class="status">
+        <h1 id="stat">you</h1>
+        <img class="one" width="80" height="80">
+        <img class="two" width="80" height="80">
+        <h1 id="stat">computer</h1>
+    </div>
+    <div class="scores">
+        <h3 id="scor">Wins: </h3>
+        <h3 id="scor" class="wins">0</h3>
+        <h3 id="scor"> , Losses: </h3>
+        <h3 id="scor" class="loses">0</h3>
+        <h3 id="scor"> , Draw:</h3>
+        <h3 id="scor" class="draws">0</h3>
+        <button class="reset">reset score</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

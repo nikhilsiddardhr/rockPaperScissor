@@ -1,0 +1,8 @@
+.you,.comp,.draw,.status,.scores{
+    display:none;
+}
+
+#stat,#scor{
+    display:inline;
+}
+
