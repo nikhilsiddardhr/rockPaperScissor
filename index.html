@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>Rock Paper Scissor</h1>
-    <button class="rock" onclick="helper(this);"><img src="rock.png" width="80" height="80"></button>
-    <button class="paper" onclick="helper(this);"><img src="paper.png" width="80" height="80"></button>
-    <button class="scissor" onclick="helper(this);"><img src="scissor.png" width="80" height="80"></button>
+    <button class="rock" onclick="playerChoice(this);"><img src="rock.png" width="80" height="80"></button>
+    <button class="paper" onclick="playerChoice(this);"><img src="paper.png" width="80" height="80"></button>
+    <button class="scissor" onclick="playerChoice(this);"><img src="scissor.png" width="80" height="80"></button>
     <h1 class="you">You Win</h1>
     <h1 class="comp">Computer win</h1>
     <h1 class="draw">Draw</h1>
@@ -27,8 +27,13 @@
         <h3 id="scor" class="loses">0</h3>
         <h3 id="scor"> , Draw:</h3>
         <h3 id="scor" class="draws">0</h3>
-        <button class="reset">reset score</button>
     </div>
+    <div class="footer_btns">
+        <button class="reset">reset score</button>
+        <button class="auto">autoplay</button>
+        <button class="stop">stop</button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
