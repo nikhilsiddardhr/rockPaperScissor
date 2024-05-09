@@ -3,7 +3,7 @@ scores=JSON.parse(localStorage.getItem('scores'))||{
     loss:0,
     draw:0
 };
-function helper(button){
+function playerChoice(button){
     displayPreset();
     you=button.className;
     comp=computerTurn();
@@ -51,3 +51,17 @@ document.querySelector('.reset').addEventListener('click',function(){
     scores.draw=0;
     displayScore();
 })
+
+function automatic(){
+    let player=computerTurn();
+    playerChoice(document.querySelector(`.${player}`));
+}
+document.querySelector('.auto').addEventListener('click',startInterval);
+document.querySelector('.stop').addEventListener('click',stopInterval);
+let interval;
+function startInterval(){
+    interval=setInterval(automatic,1000);
+}
+function stopInterval(){
+    clearInterval(interval);
+}
